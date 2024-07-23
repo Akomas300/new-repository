@@ -10,7 +10,7 @@ public class parc8 {
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://retail.tekschool-students.com/");
-        Thread.sleep(1000);
+       Thread.sleep(1000);
         driver.findElement(By.cssSelector("#signinLink")).click();
         Thread.sleep(1000);
         driver.findElement(By.cssSelector(".login__input")).sendKeys("nasibamehraban1@gmail.com");
@@ -22,5 +22,6 @@ public class parc8 {
         String text= driver.findElement(By.cssSelector(".account__information-email")).getText();
         System.out.println(text);
         driver.quit();
+
     }
 }
